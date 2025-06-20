@@ -34,14 +34,19 @@ export class InicioPage {
       icon: 'card-outline'
     },
     {
-      name: 'Prueba',
-      redirectTo: '',
-      icon: 'document-outline'
+      name: 'Fecha',
+      redirectTo: '/datetime',
+      icon: 'calendar-number-outline'
     },
     {
-      name: 'Prueba',
-      redirectTo: '',
-      icon: 'document-outline'
+      name: 'Checkbox',
+      redirectTo: '/checkbox',
+      icon: 'checkbox-outline'
+    },
+    {
+      name: 'Fab',
+      redirectTo: '/fab',
+      icon: 'add-circle-outline',
     }
   ]
 

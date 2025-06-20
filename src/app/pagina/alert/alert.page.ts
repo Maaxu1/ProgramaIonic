@@ -5,13 +5,13 @@ import { IonicModule } from '@ionic/angular';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 import { AlertController } from '@ionic/angular/standalone';
 import { IonAlert, IonButton } from '@ionic/angular/standalone';
+import type { OverlayEventDetail } from '@ionic/core';
 
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.page.html',
   styleUrls: ['./alert.page.scss'],
   imports: [IonicModule, CommonModule, RouterModule, ComponentesModule],
-  
 })
 
 export class AlertPage implements OnInit {
@@ -21,19 +21,15 @@ export class AlertPage implements OnInit {
   }
   async funcionAlerta1() {
     const alert = await this.alertController.create({
-      header: 'A Short Title Is Best',
-      subHeader: 'A Sub Header Is Optional',
-      message: 'A message should be a short, complete sentence.',
+      header: 'Un título corto es mejor',
+      subHeader: 'Un subheader es opcional',
+      message: 'Un mensaje debería ser corto',
       buttons: ['Action'],
-
-    
     });
 
-    
     await alert.present();
   }
 
-  public alertButtons = ['OK'];
   public alertInputs = [
     {
       placeholder: 'Nombre',
@@ -63,13 +59,45 @@ export class AlertPage implements OnInit {
       header: 'Mensaje Consola',
       subHeader: '',
       message: '',
-      buttons: ['Action'],
-
-    
+      buttons: this.alertButtons,    
     });
 
-    
     await alert.present();
+  }
+
+  public alertButtons = [
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      handler: () => {
+        console.log('Alerta cancelada');
+      },
+    },
+   {
+    text: 'OK',
+    role: 'confirm',
+    handler: (datos: any) => {
+      console.log('Alerta aceptada');
+      console.log('Datos del formulario:\ny6', datos);
+    },
+  },
+];
+
+  setResult(event: CustomEvent<OverlayEventDetail>) {
+    console.log(`Dismissed with role: ${event.detail.role}`);
+  }
+
+  async showAlertPersonalizada() {
+    const alertPersonalizada = await this.alertController.create({
+      backdropDismiss: false, // Forzar que no se cierre la alerta, sin elegir una opción
+      header: '¿Qué quieres hacer con tu Producto?',
+      subHeader: 'Soy algo referente al producto que debes de elegir',
+      message: 'Selecciona una opción',
+
+      buttons: ['Guardar', 'Borrar', 'Cancelar'],
+    });
+
+    await alertPersonalizada.present();
   }
   
 }

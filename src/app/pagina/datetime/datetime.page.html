@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-datetime 
+    [value]="fechaActual" 
+    (ionChange)="fechaCambiada($event)"
+    min="2025-01-01T00:00:00" 
+    max="2025-07-31T23:59:59"
+  ></ion-datetime>
+</ion-content>

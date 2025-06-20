@@ -1,15 +1,20 @@
-<app-header titulo="alerta"></app-header>
+<app-header titulo="Alerta"></app-header>
 
 <ion-content>
   <ion-button (click)="funcionAlerta1()">Click Me</ion-button>
 
   <ion-button id="funcionInputs">Input</ion-button>
-<ion-alert
-  trigger="funcionInputs"
-  header="Please enter your info"
-  [buttons]="alertButtons"
-  [inputs]="alertInputs"
-></ion-alert>
 
   <ion-button (click)="funcionCosole()">Console</ion-button>
+
+  <ion-button (click)="showAlertPersonalizada()">Alerta personalizada</ion-button>
+
+  
+  <ion-alert
+    trigger="funcionInputs"
+    header="Please enter your info"
+    [buttons]="alertButtons"
+    [inputs]="alertInputs"
+  ></ion-alert>
+  
 </ion-content>
