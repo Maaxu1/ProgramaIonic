@@ -47,6 +47,11 @@ export class InicioPage {
       name: 'Fab',
       redirectTo: '/fab',
       icon: 'add-circle-outline',
+    },
+    {
+      name: 'Grid',
+      redirectTo: '/grid',
+      icon: 'grid-outline'
     }
   ]
 

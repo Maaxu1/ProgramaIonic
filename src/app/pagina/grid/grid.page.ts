@@ -4,17 +4,16 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-fab',
-  templateUrl: './fab.page.html',
-  styleUrls: ['./fab.page.scss'],
-  imports: [IonicModule, CommonModule, RouterModule],
+  selector: 'app-grid',
+  templateUrl: './grid.page.html',
+  styleUrls: ['./grid.page.scss'],
+  imports: [IonicModule, CommonModule, RouterModule]
 })
-export class FabPage implements OnInit {
+export class GridPage implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
   }
-  items = Array(140);
 
 }
