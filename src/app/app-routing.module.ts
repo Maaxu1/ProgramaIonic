@@ -9,11 +9,11 @@ const routes: Routes = [
   },  
   {
     path: 'inicio',
-    loadChildren: () => import('./pagina/inicio/inicio.module').then(m => m.InicioPageModule)
+    loadChildren: () => import('./paginas/inicio/inicio.module').then(m => m.InicioPageModule)
   },
   {
     path: 'alert',
-    loadChildren: () => import('./pagina/alert/alert.module').then(m => m.AlertPageModule)
+    loadChildren: () => import('./paginas/alert/alert.module').then(m => m.AlertPageModule)
   },
   {
     path: 'tabs',
@@ -21,27 +21,27 @@ const routes: Routes = [
   },
   {
     path: 'card',
-    loadChildren: () => import('./pagina/card/card.module').then( m => m.CardPageModule)
+    loadChildren: () => import('./paginas/card/card.module').then( m => m.CardPageModule)
   },
   {
     path: 'checkbox',
-    loadChildren: () => import('./pagina/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+    loadChildren: () => import('./paginas/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
   },
   {
     path: 'chip',
-    loadChildren: () => import('./pagina/chip/chip.module').then( m => m.ChipPageModule)
+    loadChildren: () => import('./paginas/chip/chip.module').then( m => m.ChipPageModule)
   },
   {
     path: 'fab',
-    loadChildren: () => import('./pagina/fab/fab.module').then( m => m.FabPageModule)
+    loadChildren: () => import('./paginas/fab/fab.module').then( m => m.FabPageModule)
   },
   {
     path: 'datetime',
-    loadChildren: () => import('./pagina/datetime/datetime.module').then( m => m.DatetimePageModule)
+    loadChildren: () => import('./paginas/datetime/datetime.module').then( m => m.DatetimePageModule)
   },
   {
     path: 'grid',
-    loadChildren: () => import('./pagina/grid/grid.module').then( m => m.GridPageModule)
+    loadChildren: () => import('./paginas/grid/grid.module').then( m => m.GridPageModule)
   }
 ];
 @NgModule({
