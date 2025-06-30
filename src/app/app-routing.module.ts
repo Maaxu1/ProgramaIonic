@@ -42,7 +42,15 @@ const routes: Routes = [
   {
     path: 'grid',
     loadChildren: () => import('./paginas/grid/grid.module').then( m => m.GridPageModule)
-  }
+  },
+  {
+    path: 'infinite',
+    loadChildren: () => import('./paginas/infinite/infinite.module').then( m => m.InfinitePageModule)
+  },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./paginas/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
 ];
 @NgModule({
   imports: [

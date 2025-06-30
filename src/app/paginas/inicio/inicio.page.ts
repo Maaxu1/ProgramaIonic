@@ -52,6 +52,16 @@ export class InicioPage {
       name: 'Grid',
       redirectTo: '/grid',
       icon: 'grid-outline'
+    },
+    {
+      name: 'Infinite Scroll',
+      redirectTo: '/infinite',
+      icon: 'infinite-outline'
+    },
+    {
+      name: 'Inputs',
+      redirectTo: '/inputs',
+      icon: 'text-outline'
     }
   ]
 

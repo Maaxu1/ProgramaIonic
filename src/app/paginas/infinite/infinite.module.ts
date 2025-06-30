@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AlertPageRoutingModule } from './alert-routing.module';
+import { InfinitePageRoutingModule } from './infinite-routing.module';
 
-import { AlertPage } from './alert.page';
+import { InfinitePage } from './infinite.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AlertPageRoutingModule,
-    AlertPage,
+    InfinitePageRoutingModule,
+    InfinitePage
   ],
 })
-export class AlertPageModule {}
+export class InfinitePageModule {}

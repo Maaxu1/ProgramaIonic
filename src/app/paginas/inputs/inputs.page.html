@@ -1,0 +1,31 @@
+<app-header titulo="Inputs"></app-header>
+
+<ion-content>
+  <ion-list *ngFor="let dato of Datos">
+    <ion-item>
+      <ion-input label="Nombre:" [value]="dato.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Apellido:" [value]="dato.last_name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Dirección:" [value]="dato.adress"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Sexo:" [value]="dato.gender"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Correo Electrónico:" [value]="dato.email"></ion-input>
+    </ion-item>            
+    <ion-item>
+      <ion-input label="Estado Civil:" [value]="dato.marital_status"></ion-input>
+    </ion-item>    
+    <ion-item>
+      <ion-input label="Fecha de nacimiento:" [value]="dato.birth"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Edad:" [value]="calculateAge(dato.birth)"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 import { AlertController } from '@ionic/angular/standalone';
-import { IonAlert, IonButton } from '@ionic/angular/standalone';
 import type { OverlayEventDetail } from '@ionic/core';
 
 @Component({
@@ -19,6 +18,7 @@ export class AlertPage implements OnInit {
        
   ngOnInit() {
   }
+  
   async funcionAlerta1() {
     const alert = await this.alertController.create({
       header: 'Un título corto es mejor',
@@ -54,7 +54,7 @@ export class AlertPage implements OnInit {
     },
   ];
 
-  async funcionCosole() {
+  async funcionConsole() {
     const alert = await this.alertController.create({
       header: 'Mensaje Consola',
       subHeader: '',
@@ -78,7 +78,7 @@ export class AlertPage implements OnInit {
     role: 'confirm',
     handler: (datos: any) => {
       console.log('Alerta aceptada');
-      console.log('Datos del formulario:\ny6', datos);
+      console.log('Datos del formulario:', datos);
     },
   },
 ];

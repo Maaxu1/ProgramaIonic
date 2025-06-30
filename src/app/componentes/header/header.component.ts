@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { IonicModule} from '@ionic/angular';
 
 @Component({
   selector: 'app-header',
@@ -13,3 +12,4 @@ export class HeaderComponent {
 
   constructor() { }
 }
+

@@ -5,16 +5,17 @@
 
   <ion-button id="funcionInputs">Input</ion-button>
 
-  <ion-button (click)="funcionCosole()">Console</ion-button>
+  <ion-button (click)="funcionConsole()">Console</ion-button>
 
   <ion-button (click)="showAlertPersonalizada()">Alerta personalizada</ion-button>
 
   
   <ion-alert
     trigger="funcionInputs"
-    header="Please enter your info"
+    header="Ingresa tus datos"
     [buttons]="alertButtons"
     [inputs]="alertInputs"
   ></ion-alert>
   
 </ion-content>
+
