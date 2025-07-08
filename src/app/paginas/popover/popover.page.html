@@ -1,0 +1,24 @@
+<app-header titulo="Popover"></app-header>
+
+<ion-content>
+  <ion-button id="click-trigger">Da clic izquierdo</ion-button>
+  <ion-popover trigger="click-trigger" triggerAction="click">
+    <ng-template>
+      <ion-content class="ion-padding">¡Hola!</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button id="context-menu-trigger">Da clic derecho</ion-button>
+  <ion-popover trigger="context-menu-trigger" triggerAction="context-menu">
+    <ng-template>
+      <ion-content class="ion-padding">¡Hola!</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button id="hover-trigger">Pasa el mouse por encima de mi</ion-button>
+  <ion-popover trigger="hover-trigger" triggerAction="hover">
+    <ng-template>
+      <ion-content class="ion-padding">¡Hola!</ion-content>
+    </ng-template>
+  </ion-popover>
+</ion-content>

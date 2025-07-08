@@ -62,6 +62,21 @@ export class InicioPage {
       name: 'Inputs',
       redirectTo: '/inputs',
       icon: 'text-outline'
+    },
+    {
+      name: 'Modals',
+      redirectTo: '/modal',
+      icon: 'layers-outline'
+    },
+    {
+      name: 'Popover',
+      redirectTo: '/popover',
+      icon: 'chatbox-outline'
+    },
+    {
+      name: 'Lista',
+      redirectTo: '/list',
+      icon: 'list-outline'
     }
   ]
 

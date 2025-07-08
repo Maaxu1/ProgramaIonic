@@ -31,3 +31,4 @@ export class InfinitePage implements OnInit {
     }, 500);
   }
 }
+
