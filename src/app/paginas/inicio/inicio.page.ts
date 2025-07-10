@@ -73,6 +73,11 @@ export class InicioPage {
       redirectTo: '/popover',
       icon: 'chatbox-outline'
     },
+    {
+      name: 'Lista',
+      redirectTo: '/list',
+      icon: 'list-outline'
+    }
   ]
 
 }
