@@ -5,10 +5,12 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list [inset]="true">
     <ion-item *ngFor="let elemento of Elementos" [routerLink]="elemento.redirectTo" detail>
       <ion-icon [name]="elemento.icon" slot="start" color="tertiary"></ion-icon>
-      {{ elemento.name }}
+      <ion-label>
+        <h2>{{ elemento.name }}</h2>
+      </ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
