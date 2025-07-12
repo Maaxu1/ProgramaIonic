@@ -1,4 +1,4 @@
 {
-  "buildCommand": "ionic build --prod",
+  "buildCommand": "npx ionic build --prod",
   "outputDirectory": "www"
 }
