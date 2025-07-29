@@ -7,11 +7,9 @@ import { ComponentesModule } from 'src/app/componentes/componentes.module';
 interface generalData {
   name: string;
   last_name: string;
-  adress: string;
   gender: string;
   email: string;
   birth: string;
-  marital_status: string;
 };
 
 @Component({
@@ -32,13 +30,11 @@ export class InputsPage implements OnInit {
   
   Datos: generalData[] = [
     {
-      name: "Erick Maximiliano",
-      last_name: "González Alvarado",
-      adress: "Montebello Sauce #319 Tamaulipas, Miguel Aleman",
+      name: "Max",
+      last_name: "González",
       gender: "Masculino",
       email: "max05gonz@gmail.com",
       birth: this.handleDate(2004, 8, 5),
-      marital_status: "Soltero"
     },
   ]
 
