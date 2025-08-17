@@ -77,6 +77,11 @@ export class InicioPage {
       name: 'Lista',
       redirectTo: '/list',
       icon: 'list-outline'
+    },
+    {
+      name: 'Notificaciones',
+      redirectTo: '/notification',
+      icon: 'notifications-outline'
     }
   ]
 

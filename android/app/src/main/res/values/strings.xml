@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">APPITI22Tab</string>
-    <string name="title_activity_main">APPITI22Tab</string>
-    <string name="package_name">io.ionic.starter</string>
-    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="app_name">AppITI</string>
+    <string name="title_activity_main">AppITI</string>
+    <string name="package_name">app.iti.g22</string>
+    <string name="custom_url_scheme">app.iti.g22</string>
 </resources>
