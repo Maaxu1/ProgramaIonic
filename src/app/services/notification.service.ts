@@ -11,17 +11,13 @@ import * as moment from 'moment-timezone';
   providedIn: 'root'
 })
 export class NotificationService {
-
-  
-  init(){
-
+  init() {
     const isPushNotificationsAvailable = Capacitor.isPluginAvailable('PushNotifications');
 
     if(isPushNotificationsAvailable){
       PushNotifications.requestPermissions().then( (result) => {
         if(result.receive){
           OneSignal.initialize(environment.oneSignalID)
-
 
           OneSignal.Notifications.addEventListener('click', async (e) => {
             const notification: any = e.notification;
@@ -30,15 +26,11 @@ export class NotificationService {
             }
           })
         }
-
-
       })
     }
-
   }
 
-  sendNotification(notification: INotification){
-
+  sendNotification(notification: INotification) {
     const userTimezone = moment.tz.guess();
 
     return CapacitorHttp.post({
@@ -60,8 +52,5 @@ export class NotificationService {
       console.log(response);
       return response.status === 200
     })
-
-
   }
-
 }
